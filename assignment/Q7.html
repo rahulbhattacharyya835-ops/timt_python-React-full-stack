@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prices Calculation</title>
+</head>
+<body>
+
+<script>
+let prices = [1000, 2500, 500, 4000, 1500];
+
+let above1000 = prices.filter(price => price > 1000);
+
+let discountedPrices = above1000.map(price => price * 90 / 100);
+
+let finalTotal = discountedPrices.reduce((total, price) => total + price, 0);
+
+console.log("Prices above ₹1000:", above1000);
+console.log("After 10% discount:", discountedPrices);
+console.log("Final Total:", finalTotal);
+</script>
+
+</body>
+</html>

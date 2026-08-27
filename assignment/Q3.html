@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart Total</title>
+</head>
+<body>
+
+<script>
+function calculateTotal(price, quantity, discount) {
+    let subtotal = price * quantity;
+    let discountAmount = subtotal * discount / 100;
+    let finalAmount = subtotal - discountAmount;
+
+    console.log("Subtotal:", subtotal);
+    console.log("Discount Amount:", discountAmount);
+    console.log("Final Amount:", finalAmount);
+}
+
+calculateTotal(500, 3, 10);
+</script>
+
+</body>
+</html>

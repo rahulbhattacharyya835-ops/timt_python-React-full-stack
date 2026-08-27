@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salaries</title>
+</head>
+<body>
+
+<script>
+let employees = [
+    { name: "Riju", salary: 45000 },
+    { name: "Rahul", salary: 60000 },
+    { name: "Amit", salary: 75000 },
+    { name: "Suman", salary: 40000 },
+    { name: "Arjun", salary: 55000 }
+];
+
+let highSalaryEmployees = employees.filter(employee => employee.salary > 50000);
+
+console.log(highSalaryEmployees);
+</script>
+
+</body>
+</html>

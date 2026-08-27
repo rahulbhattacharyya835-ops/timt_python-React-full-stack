@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result System</title>
+</head>
+<body>
+
+<script>
+let students = [
+    {
+        name: "Rahul",
+        marks: [80, 75, 90]
+    },
+    {
+        name: "Ananya",
+        marks: [95, 88, 92]
+    },
+    {
+        name: "Amit",
+        marks: [60, 55, 70]
+    }
+];
+
+for (let student of students) {
+    let total = student.marks.reduce((sum, mark) => sum + mark, 0);
+    let average = total / student.marks.length;
+    let grade;
+
+    if (average >= 80) {
+        grade = "A";
+    } else if (average >= 60) {
+        grade = "B";
+    } else if (average >= 50) {
+        grade = "C";
+    } else if (average >= 40) {
+        grade = "D";
+    } else {
+        grade = "F";
+    }
+
+    console.log("Name:", student.name);
+    console.log("Total:", total);
+    console.log("Average:", average);
+    console.log("Grade:", grade);
+    console.log("----------------");
+}
+</script>
+
+</body>
+</html>

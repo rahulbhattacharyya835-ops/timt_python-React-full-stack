@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highest Paid Employee</title>
+</head>
+<body>
+
+<script>
+let employees = [
+    { name: "Rahul", salary: 50000 },
+    { name: "Ananya", salary: 75000 },
+    { name: "Priya", salary: 65000 },
+    { name: "Amit", salary: 90000 }
+];
+
+let highestPaid = employees[0];
+
+for (let i = 1; i < employees.length; i++) {
+    if (employees[i].salary > highestPaid.salary) {
+        highestPaid = employees[i];
+    }
+}
+
+console.log("Highest Paid Employee:", highestPaid.name);
+console.log("Salary:", highestPaid.salary);
+</script>
+
+</body>
+</html>

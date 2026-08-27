@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary Calculator</title>
+</head>
+<body>
+
+<script>
+let employeeName = "Riju";
+let basicSalary = 30000;
+
+let HRA = basicSalary * 20 / 100;
+let DA = basicSalary * 10 / 100;
+let grossSalary = basicSalary + HRA + DA;
+let tax = grossSalary * 5 / 100;
+let finalSalary = grossSalary - tax;
+
+console.log("Employee Name:", employeeName);
+console.log("Basic Salary:", basicSalary);
+console.log("HRA:", HRA);
+console.log("DA:", DA);
+console.log("Gross Salary:", grossSalary);
+console.log("Tax:", tax);
+console.log("Final Salary:", finalSalary);
+</script>
+
+</body>
+</html>
